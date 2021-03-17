@@ -18,6 +18,7 @@ export class HomeComponent implements OnInit {
 
   onStyleChange(style: string) : void {
     this.style = style;
+    this.chooseColor(style);
   }
 
   subdued_and_professional: Array<string> = [
@@ -56,39 +57,53 @@ export class HomeComponent implements OnInit {
     '#F47D4A', '#E1315B', '#FFEC5C', '#008DCB'
   ]
 
-  randomArray(array: Array<string>) {
+  randomArray(array: Array<string>): number {
     return Math.floor(Math.random() * array.length)
   }
 
-  chooseColor(style: string) : string {
+  choosePosition(array: Array<string>): void {
+    const random = this.randomArray(array);
+    this.posicao1 = array[random];
+    let arrayCopy = [...array];
+    arrayCopy.splice(random, 1);
+    const random2 = this.randomArray(arrayCopy);
+    this.posicao2 = arrayCopy[random2];
+    arrayCopy.splice(random2, 1);
+    const random3 = this.randomArray(arrayCopy);
+    this.posicao3 = arrayCopy[random3];
+    arrayCopy.splice(random3, 1);
+    this.posicao4 = arrayCopy[0];
+  }
+
+  chooseColor(style: string) : void {
     switch (style) {
       case 'subdued_and_professional':
-        const random =  this.randomArray(this.subdued_and_professional);
-        return this.subdued_and_professional[random];
+        this.choosePosition(this.subdued_and_professional);
+        break;
       case 'cool_blues':
-        const random2 =  this.randomArray(this.cool_blues);
-        return this.cool_blues[random2];
+        this.choosePosition(this.cool_blues);
+        break;
       case 'primary_colors_with':
-        const random3 = this.randomArray(this.primary_colors_with);
-        return this.primary_colors_with[random3];
+        this.choosePosition(this.primary_colors_with);
+        break;
       case 'icy_blues':
-        const random4 = this.randomArray(this.icy_blues);
-        return this.icy_blues[random4];
+       this.choosePosition(this.icy_blues);
+       break;
       case 'neutral_versatile':
-        const random5 = this.randomArray(this.neutral_versatile);
-        return this.neutral_versatile[random5];
+        this.choosePosition(this.neutral_versatile);
+        break;
       case 'fun_tropical':
-        const random6 = this.randomArray(this.fun_tropical);
-        return this.fun_tropical[random6];
+        this.choosePosition(this.fun_tropical);
+        break;
       case 'spicy_neutrals':
-        const random7 = this.randomArray(this.spicy_neutrals);
-        return this.spicy_neutrals[random7];
+        this.choosePosition(this.spicy_neutrals);
+        break;
       case 'aqua_blues':
-        const random8 = this.randomArray(this.aqua_blues);
-        return this.aqua_blues[random8];
+        this.choosePosition(this.aqua_blues);
+        break;
       case 'candy_bright':
-        const random9 = this.randomArray(this.candy_bright);
-        return this.candy_bright[random9];
+        this.choosePosition(this.candy_bright);
+        break;
     }
   }
 

@@ -1,27 +1,5 @@
-# Spaangular
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  Este projeto foi feito com o objetivo de completar uma tarefa do Bootcamp Angular da Avanade.
+A proposta dele é a de ajudar o desenvolvedor a escolher o esquema de cores para o seu site.
+Foram utilizadas paletas do seguinte site: https://www.canva.com/learn/100-color-combinations/
+Este projeto foi muito útil para aprender algumas coisas importantes que eu não tinha conhecimento ainda. Por exemplo, implementar uma comunicação entre um componente filho e um componente pai não é trivial. E isso era necessário no SPA que foi feito. Para conseguir isso, utilizei a API do Angular de Event Emitter, assim o componente filho emite eventos, no caso no apertar de um botão, e o componente pai escuta esses eventos, mudando de cor com o evento do filho. 
+  Uma coisa importante a se salientar é que este projeto é apenas um protótipo. Ao longo do Bootcamp, aprendendo mais sobre Angular, esta SPA pode vir a ser melhorada, e lentamente se tornar uma aplicação profissional.
