@@ -1,0 +1,40 @@
+.tabs {
+  padding-top: 40px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.div__flex {
+  padding: 2%;
+}
+
+.above__card {
+  margin: 0.5%;
+}
+
+.subdued {
+  height: 195px;
+  width: auto;
+}
+
+.imagens {
+  margin-bottom: 25px;
+}
+
+.container {
+  height: calc(100vh);
+}
+
+.space {
+  height: 100px;
+}
+
+.texto {
+  width: 100%;
+  padding-right: 500px;
+}
+
+.caixa {
+  display: flex;
+  flex-direction: column;
+}

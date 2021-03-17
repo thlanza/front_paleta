@@ -1,0 +1,30 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.toolbar {
+  font-size: 1.5rem;
+  height: 80px;
+}
+
+.paleta {
+  padding-right: 50px;
+}
+
+.icon {
+  margin-left: 14px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.home {
+  background-color: rgb(71, 211, 211);
+  color: #fff;
+}
+
+
+
+

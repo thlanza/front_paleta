@@ -1,0 +1,10 @@
+.rodape {
+  position:fixed;
+  bottom: 0;
+  height: 500;
+  width: 100%;
+  z-index: 2;
+  color: #000;
+  padding: 30px;
+  background-color: #BCBABE;
+}

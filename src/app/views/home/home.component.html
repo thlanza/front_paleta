@@ -1,0 +1,13 @@
+
+<mat-toolbar class="home">
+  <mat-toolbar-row [ngStyle]="{ backgroundColor: style === '' ? '' : chooseColor(style) }" class="toolbar">
+    <div>
+    <span class="logo"  [ngStyle]="{ backgroundColor: style === '' ? '' : chooseColor(style), color: style === '' ? '' : chooseColor(style) }">Paleta de cores<mat-icon class="icon">format_color_fill</mat-icon></span>
+  </div>
+    <span class="example-spacer"></span>
+    <button [ngStyle]="{ backgroundColor: style === '' ? '' : chooseColor(style) }"mat-raised-button><mat-icon>add</mat-icon>Adicionar</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<spa-live-list #child (styleChange)="onStyleChange($event)"></spa-live-list>
+<spa-rodape></spa-rodape>
+

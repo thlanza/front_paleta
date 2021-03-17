@@ -1,0 +1,70 @@
+<mat-tab-group class="container" [ngStyle]="{ backgroundColor: selectedStyle === '' ? '' : chooseColor(selectedStyle) }" mat-align-tabs="start" class="tabs">
+    <mat-tab label="FORMAL">
+      <span class="texto"><br />Clique num esquema de cores! Se quiser reordenar as cores dentro do mesmo esquema, clique de novo na mesma imagem.<br /></span>
+      <button class="imagens" (click)="onImageChange('subdued_and_professional')">
+        <figure>
+          <img class="subdued" src="../../../../assets/img/subdued_and_professional.png" />
+          <figcaption>Subdued and Professional</figcaption>
+        </figure> 
+    </button>
+    <button class="imagens" (click)="onImageChange('neutral_versatile')">
+      <figure>
+      <img class="subdued" src="../../../../assets/img/neutral_versatile.png" />
+      <figcaption>Neutral and Versatile</figcaption>
+    </figure>
+    </button>
+    <button class="imagens" (click)="onImageChange('spicy_neutrals')">
+      <figure>
+      <img class="subdued" src="../../../../assets/img/spicy_neutrals.png" />
+      <figcaption>Spicy Neutrals</figcaption>
+    </figure>
+    </button>
+    <div class="space"></div>
+    </mat-tab>
+    <mat-tab label="COLORIDO">
+     
+      <span class="texto"><br />Clique num esquema de cores! Se quiser reordenar as cores dentro do mesmo esquema, clique de novo na mesma imagem.<br /></span>
+      <button class="imagens" (click)="onImageChange('primary_colors_with')">
+        <figure>
+        <img class="subdued" src="../../../../assets/img/primary_colors_with.png" />
+        <figcaption>Primary Colors with a vibrant twist</figcaption>
+        </figure>
+      </button>
+      <button class="imagens" (click)="onImageChange('fun_tropical')">
+        <figure>
+        <img class="subdued" src="../../../../assets/img/fun_tropical.png" />
+        <figcaption>Fun and Tropical</figcaption>
+        </figure>
+      </button>
+      <button class="imagens" (click)="onImageChange('candy_bright')">
+        <figure>
+        <img class="subdued" src="../../../../assets/img/candy_bright.jpg" />
+        <figcaption>Candy Coated Bright</figcaption>
+      </figure>
+      </button>
+      <div class="space"></div>
+    </mat-tab>
+    <mat-tab label="GRADIENTE">
+      <span class="texto"><br />Clique num esquema de cores! Se quiser reordenar as cores dentro do mesmo esquema, clique de novo na mesma imagem.<br /></span>
+      <button class="imagens" (click)="onImageChange('cool_blues')">
+        <figure>
+        <img class="subdued" src="../../../../assets/img/cool_blues.png" />
+        <figcaption>Cool Blues</figcaption>
+        </figure>
+      </button>
+      <button class="imagens" (click)="onImageChange('icy_blues')">
+        <figure>
+        <img class="subdued" src="../../../../assets/img/icy_blues.png" />
+        <figcaption>Icy Blues</figcaption>
+        </figure>
+      </button>
+      <button class="imagens" (click)="onImageChange('aqua_blues')">
+        <figure>
+        <img class="subdued" src="../../../../assets/img/aqua_blues.jpg" />
+        <figcaption>Aqua Blues</figcaption>
+        </figure>
+      </button>
+      <div class="space"></div>
+    </mat-tab>
+</mat-tab-group>
+
